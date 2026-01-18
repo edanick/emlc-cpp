@@ -32,22 +32,48 @@ emlc index.html index.eml       # Decompile HTML back to EML
 
 ## 📝 Syntax Comparison
 
-**HTML/XML**
-```html
-<div class="container">
-    <h1>Hello World</h1>
-    <p>Welcome to EML.</p>
-    <a href="https://example.com">Click Me</a>
-</div>
-```
+
 
 **EML**
 ```eml
-div (class="container") {
-    h1 { Hello World }
-    p { Welcome to EML. }
-    a (href="https://example.com") { Click Me }
+html(lang="en") {
+    head {
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title { Website }
+    }
+    body {
+        form (method="POST", action="/") {
+            label (for="username") {Username}
+            input(type="text", name="username", placeholder="Username")
+            label (for="password") {Password}
+            input(type="text", name="password", placeholder="Password")
+            input(type="submit", name="signup", value="Sign Up")
+        }
+    }
 }
+```
+
+**HTML/XML**
+```html
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Website </title>
+    </head>
+    <body>
+        <form method="POST" action="/">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Username">
+            <label for="password">Password</label>
+            <input type="text" name="password" placeholder="Password">
+            <input type="submit" name="signup" value="Sign Up">
+        </form>
+    </body>
+</html>
+
+```
 
 ## 🌍 Multi-Platform Examples
 
