@@ -1,0 +1,17 @@
+
+# Build Artifacts
+x64/
+*.obj
+*.pdb
+*.tlog
+*.idb
+*.ilk
+*.exe
+*.iobj
+*.ipdb
+*.recipe
+*.lastbuildstate
+
+# IDE
+.vs/
+*.vcxproj.user
