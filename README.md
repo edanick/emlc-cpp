@@ -84,9 +84,11 @@ php {
     require('auth.php');
 }
 html {
+    head {
+        title { My PHP Site }
+    }
     body {
         h1 { Welcome to my PHP Site }
-
     }
 }
 ```
